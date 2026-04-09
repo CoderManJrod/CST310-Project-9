@@ -1,0 +1,75 @@
+=====================================================
+  Project 9 — Advanced Shader Implementation
+  Course: CST-310 Computer Graphics | Grand Canyon University
+  Authors: Jared Walker & James Hohn
+  Instructor: Ricardo Citro
+  Due Date: April 9th, 2026
+=====================================================
+
+------------------------------------------------------
+SOFTWARE REQUIREMENTS
+------------------------------------------------------
+- Operating System : Ubuntu 22.04 LTS or later
+- Compiler         : g++ with C++17 support
+- OpenGL           : 3.3 core profile or higher
+                     (check: glxinfo | grep "OpenGL version")
+- GLEW             : libglew-dev
+- GLUT             : FreeGLUT (freeglut3-dev)
+- GLU              : libglu1-mesa-dev
+
+------------------------------------------------------
+INSTALL DEPENDENCIES
+------------------------------------------------------
+  sudo apt install build-essential freeglut3-dev \
+       libglew-dev libglu1-mesa-dev -y
+
+------------------------------------------------------
+COMPILE
+------------------------------------------------------
+  g++ project9.cpp -o project9 -lGL -lGLU -lGLEW -lglut -std=c++17
+
+------------------------------------------------------
+RUN
+------------------------------------------------------
+  ./project9
+
+------------------------------------------------------
+CONTROLS
+------------------------------------------------------
+  W                  - Move forward
+  S                  - Move backward
+  A                  - Strafe left
+  D                  - Strafe right
+  Left / Right arrow - Rotate camera yaw
+  Up / Down arrow    - Rotate camera pitch
+  Ctrl + Left/Right  - Precise yaw (2 degrees)
+  Ctrl + Up/Down     - Precise pitch (2 degrees)
+  Shift + Up         - Slide camera in  (positive Z)
+  Shift + Down       - Slide camera out (negative Z)
+  <                  - Roll camera left
+  >                  - Roll camera right
+  R                  - Reset camera to default
+  ESC                - Quit
+
+------------------------------------------------------
+SCENE DESCRIPTION
+------------------------------------------------------
+- Red and white checkerboard floor (8x8 grid)
+- Sphere (green, high shininess) — left side
+- Cylinder (olive/yellow, medium shininess) — center
+- Cube (blue, moderate shininess) — right side
+- Single light source at (6, 8, 6) in world space
+- All objects shaded with per-fragment Blinn-Phong
+- Checkerboard pattern is procedural (no texture file)
+
+------------------------------------------------------
+NOTES
+------------------------------------------------------
+- No external image files or shader files required.
+  All shader source is embedded in project9.cpp.
+- OpenGL 3.3 core profile is required. If GLEW fails:
+  sudo apt install mesa-utils libgl1-mesa-dri
+- Screenshots are in the screenshots/ folder.
+- GitHub: [Your GitHub URL here]
+- Video: [Your Loom/YouTube/Vimeo URL here]
+=====================================================
