@@ -11,7 +11,7 @@
 
 ## Overview
 
-A 3D scene rendered entirely through a custom GLSL shader pipeline. The scene features a procedurally generated checkerboard floor with three objects — a sphere, a cylinder, and a cube — each shaded with per-fragment Blinn-Phong lighting. A free-look camera lets the user navigate across the checkerboard and inspect all three objects.
+A 3D scene rendered entirely through a custom GLSL shader pipeline. The scene features a procedurally generated checkerboard floor with three objects: a sphere, a cylinder, and a cube, each shaded with per-fragment Blinn-Phong lighting. A free-look camera lets the user navigate across the checkerboard and inspect all three objects.
 
 ---
 
