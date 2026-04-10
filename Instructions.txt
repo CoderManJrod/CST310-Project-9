@@ -3,7 +3,7 @@
   Course: CST-310 Computer Graphics | Grand Canyon University
   Authors: Jared Walker & James Hohn
   Instructor: Ricardo Citro
-  Due Date: April 9th, 2026
+  Date: April 9th, 2026
 =====================================================
 
 ------------------------------------------------------
@@ -46,8 +46,8 @@ CONTROLS
   Ctrl + Up/Down     - Precise pitch (2 degrees)
   Shift + Up         - Slide camera in  (positive Z)
   Shift + Down       - Slide camera out (negative Z)
-  <                  - Roll camera left
-  >                  - Roll camera right
+  Q                  - Roll camera left
+  W                  - Roll camera right
   R                  - Reset camera to default
   ESC                - Quit
 
@@ -71,5 +71,4 @@ NOTES
   sudo apt install mesa-utils libgl1-mesa-dri
 - Screenshots are in the screenshots/ folder.
 - GitHub: [Your GitHub URL here]
-- Video: [Your Loom/YouTube/Vimeo URL here]
 =====================================================
