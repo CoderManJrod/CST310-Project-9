@@ -70,5 +70,5 @@ NOTES
 - OpenGL 3.3 core profile is required. If GLEW fails:
   sudo apt install mesa-utils libgl1-mesa-dri
 - Screenshots are in the screenshots/ folder.
-- GitHub: [Your GitHub URL here]
+- GitHub: https://github.com/CoderManJrod/CST310-Project-9.git
 =====================================================
