@@ -1,7 +1,7 @@
 // project9.cpp
 //
 // Authors: Jared Walker & James Hohn
-// Course:  CST-310 — Computer Graphics
+// Course:  CST-310 — Computer Graphics 
 // School:  Grand Canyon University
 //
 // Compile:
@@ -370,8 +370,8 @@ Mesh buildBoard(int w, int d) {
 // ─── Camera ───────────────────────────────────────────────────────────────────
 // Free-look camera using yaw and pitch angles.
 struct Camera {
-    float x=4, y=2, z=14;       // eye position
-    float yaw=-90, pitch=-10;   // degrees
+    float x=0, y=2, z=10;
+    float yaw=-90, pitch=-10;
     float roll=0;               // camera roll angle
     float speed=0.2f, sens=1.5f;
 
@@ -440,7 +440,7 @@ void display() {
     glBindVertexArray(0);
 
     // Sphere — green, shiny, LEFT
-    float sModel[16]; buildModel(-2.5f,1.2f,0, 1.2f,1.2f,1.2f, sModel);
+    float sModel[16]; buildModel(2.5f,1.2f,0, 1.2f,1.2f,1.2f, sModel);
     setUniforms(solidProg,sModel, 0,0.8f,0.1f, lx,ly,lz,cx,cy,cz, 96);
     sphere.draw();
 
@@ -450,10 +450,9 @@ void display() {
     cube.draw();
 
     // Cylinder — olive/yellow, RIGHT
-    float cModel[16]; buildModel(2.5f,1,0, 1,1.5f,1, cModel);
+    float cModel[16]; buildModel(-2.5f,1,0, 1,1.5f,1, cModel);
     setUniforms(solidProg,cModel, 0.55f,0.5f,0.05f, lx,ly,lz,cx,cy,cz, 32);
-    cylinder.draw();
-    glutSwapBuffers();
+    cylinder.draw();    glutSwapBuffers();
 }
 
 // ─── Keyboard ─────────────────────────────────────────────────────────────────
@@ -470,7 +469,7 @@ void keyboard(unsigned char key, int, int) {
         case 'e': case 'E': cam.roll += 2.0f; break;
         // R — reset camera
         case 'r': case 'R':
-            cam.x=4; cam.y=2; cam.z=14;
+            cam.x=0; cam.y=2; cam.z=10;
             cam.yaw=-90; cam.pitch=-10; cam.roll=0;
             break;
         case 27: exit(0);
