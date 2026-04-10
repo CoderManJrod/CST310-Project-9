@@ -1,6 +1,6 @@
 # Project 9 — Advanced Shader Implementation with Camera Control
 
-**Course:** CST-310: Computer Graphics
+**Course:** CST-310 — Computer Graphics 
 **Institution:** Grand Canyon University
 **Authors:** Jared Walker &amp; James Hohn
 **Instructor:** Ricardo Citro
@@ -41,8 +41,8 @@ A 3D scene rendered entirely through a custom GLSL shader pipeline. The scene fe
 | Ctrl + Up / Down | Precise pitch (2 degrees) |
 | Shift + Up | Slide camera in (positive Z) |
 | Shift + Down | Slide camera out (negative Z) |
-| < | Roll camera left |
-| > | Roll camera right |
+| Q | Roll camera left |
+| W | Roll camera right |
 | R | Reset camera to default position |
 | ESC | Quit |
 
@@ -95,7 +95,6 @@ project9/
 | Fragment — board | Procedural checker from floor(fragPos.xz) + Blinn-Phong |
 
 ---
-
 
 ## References
 
