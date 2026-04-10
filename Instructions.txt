@@ -47,7 +47,7 @@ CONTROLS
   Shift + Up         - Slide camera in  (positive Z)
   Shift + Down       - Slide camera out (negative Z)
   Q                  - Roll camera left
-  W                  - Roll camera right
+  E                  - Roll camera right
   R                  - Reset camera to default
   ESC                - Quit
 
