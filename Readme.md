@@ -5,7 +5,7 @@
 **Authors:** Jared Walker &amp; James Hohn
 **Instructor:** Ricardo Citro
 **Date:** April 9th, 2026
-**GitHub Repository:** [Your GitHub URL here]
+**GitHub Repository:** https://github.com/CoderManJrod/CST310-Project-9.git
 
 ---
 
