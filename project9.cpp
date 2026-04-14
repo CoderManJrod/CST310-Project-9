@@ -1,7 +1,7 @@
 // project9.cpp
 //
 // Authors: Jared Walker & James Hohn
-// Course:  CST-310 — Computer Graphics 
+// Course:  CST-310 -- Computer Graphics
 // School:  Grand Canyon University
 //
 // Compile:
@@ -10,12 +10,11 @@
 //   ./project9
 //
 // Controls:
-//   W / S         — move forward / backward
-//   A / D         — strafe left / right
-//   Q / E         - roll left / right
+//   W / S — move forward / backward
+//   A / D — strafe left / right
 //   Arrow Up/Down — pitch camera up / down
-//   Arrow L/R     — rotate camera left / right
-//   ESC           — quit
+//   Arrow L/R — rotate camera left / right
+//   ESC — quit
 
 #ifdef __APPLE_CC__
 #include <GLUT/glut.h>
@@ -133,6 +132,9 @@ GLuint buildProgram(const char* vs, const char* fs) {
     GLuint f = compileShader(GL_FRAGMENT_SHADER, fs);
     GLuint p = glCreateProgram();
     glAttachShader(p, v); glAttachShader(p, f);
+    // Bind attribute locations before linking for GLSL 1.30 compatibility
+    glBindAttribLocation(p, 0, "aPos");
+    glBindAttribLocation(p, 1, "aNormal");
     glLinkProgram(p);
     glDeleteShader(v); glDeleteShader(f);
     return p;
