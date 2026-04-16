@@ -3,7 +3,7 @@
 // Compatible with: g++ Proj9FinalSub.cpp -o run -lglfw -lGL -lGLEW -lSOIL -lassimp
 //
 // Authors: Jared Walker & James Hohn
-// Course:  CST-310 — Computer Graphics
+// Course:  CST-310 — Computer Graphics 
 // School:  Grand Canyon University
 //
 // Controls:
@@ -344,8 +344,12 @@ void processInput(GLFWwindow* win, float dt) {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 int main() {
     if(!glfwInit()){fprintf(stderr,"GLFW failed\n");return -1;}
+    
+    // Try to use software rendering if no display is available
+    glfwWindowHint(GLFW_VISIBLE, GLFW_TRUE);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,2);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,1);
+    glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_API);
     GLFWwindow* win=glfwCreateWindow(winW,winH,"Project 9 — Shader Scene",NULL,NULL);
     if(!win){fprintf(stderr,"Window failed\n");glfwTerminate();return -1;}
     glfwMakeContextCurrent(win);
